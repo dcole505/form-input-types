@@ -33,11 +33,30 @@
         <label for="color">What is your favorite color</label>
         <input id="color" class="form-control" type="color">
       </div>
-      <div class="form-group">
-        <label for="favAnimal">What is your favorite animal?</label>
-        <input id="favAnimal" class="form-control" type="text">
+      <label>What is your favorite animal?</label>
+      <div class="radio">
+        <label>
+          <input type="radio" name="animal" value="bird" checked>
+          Bird
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="animal" value="cat">
+          Cat
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="animal" value="dog">
+          Dog
+        </label>
       </div>
     </form>
+  </div>
+  <div id="receipt">
+    <h1>Receipt</h1>
+    <p>Hey there <span class="fullName"></span>. You said your favorite animal is a <span class="animal"></span>. Thanks for sharing that information with us.</p>
   </div>
 </body>
 </html>
